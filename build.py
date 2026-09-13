@@ -1,33 +1,31 @@
 import urllib.request
-import ssl
 
-ctx = ssl.create_default_context()
-ctx.check_hostname = False
-ctx.verify_mode = ssl.CERT_NONE
+# Dùng thẳng trang chủ của ABPVN và link CDN để không bị GitHub chặn
+SOURCES = [
+    "https://abpvn.com/filter/abpvn-hosts.txt",
+    "https://cdn.jsdelivr.net/gh/abpvn/abpvn@master/filter/abpvn-hosts.txt"
+]
 
-# Chỉ lấy duy nhất link gốc của ABPVN
-URL = "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn-hosts.txt"
+data = ""
 
-domains = set()
+for url in SOURCES:
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req, timeout=15) as response:
+            data = response.read().decode('utf-8', errors='ignore')
+            # Nếu tải được nội dung dài (thành công) thì dừng vòng lặp
+            if len(data) > 1000:
+                print(f"Đã tải thành công từ: {url}")
+                break
+    except Exception as e:
+        print(f"Lỗi khi tải từ {url}: {e}")
 
-try:
-    req = urllib.request.Request(URL, headers={'User-Agent': 'Mozilla/5.0'})
-    with urllib.request.urlopen(req, context=ctx, timeout=15) as resp:
-        content = resp.read().decode('utf-8', errors='ignore')
-        for line in content.splitlines():
-            line = line.strip()
-            # Bắt đúng dòng bắt đầu bằng "0.0.0.0 " của ABPVN
-            if line.startswith('0.0.0.0 '):
-                domain = line.replace('0.0.0.0 ', '').strip()
-                if domain:
-                    domains.add(domain)
-except Exception as e:
-    print(f"Lỗi khi tải ABPVN: {e}")
-
-# Xuất chuẩn format cho AdGuard Home
+# Lưu thẳng nội dung gốc vào file, AdGuard Home tự đọc được hết
 with open("blocklist.txt", "w", encoding="utf-8") as f:
-    f.write("! Title: ABPVN List\n\n")
-    for d in sorted(domains):
-        f.write(f"||{d}^\n")
+    f.write("! Title: ABPVN Fixed Mirror\n\n")
+    if data:
+        f.write(data)
+    else:
+        f.write("! LỖI: Không thể kết nối đến máy chủ ABPVN.")
 
-print(f"Thành công: Đã tạo file với {len(domains)} domains từ ABPVN.")
+print("Hoàn tất!")
