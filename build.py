@@ -2,15 +2,14 @@ import urllib.request
 import re
 import ssl
 
-# Bỏ qua lỗi SSL certificate nếu có
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
+# Tải trực tiếp từ nguồn chính thức của ABPVN
 SOURCES = [
-    "https://cdn.jsdelivr.net/gh/abpvn/abpvn@master/filter/abpvn-hosts.txt",
-    "https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-adguard.txt",
-    "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt"
+    "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn-hosts.txt",
+    "https://cdn.jsdelivr.net/gh/abpvn/abpvn@master/filter/abpvn-hosts.txt"
 ]
 
 domains = set()
@@ -28,13 +27,15 @@ for url in SOURCES:
                 cleaned = re.sub(r'(\^|\$).*', '', cleaned).strip()
                 if cleaned and '.' in cleaned and not cleaned.startswith('.'):
                     domains.add(cleaned)
+            if len(domains) > 0:
+                break
     except Exception as e:
-        print(f"Lỗi fetch {url}: {e}")
+        print(f"Lỗi: {e}")
 
 with open("blocklist.txt", "w", encoding="utf-8") as f:
-    f.write("! Title: My Custom Blocklist\n\n")
+    f.write("! Title: ABPVN Custom Mirror List\n\n")
     for domain in sorted(domains):
         f.write(f"||{domain}^\n")
 
-print(f"Done: {len(domains)} domains")
+print(f"Thành công: Đã tải {len(domains)} domains từ ABPVN.")
 
