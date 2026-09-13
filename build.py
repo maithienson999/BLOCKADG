@@ -6,10 +6,11 @@ ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
-# Tải trực tiếp từ nguồn chính thức của ABPVN
+# Các nguồn CDN mirror của ABPVN & hostsVN
 SOURCES = [
-    "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn-hosts.txt",
-    "https://cdn.jsdelivr.net/gh/abpvn/abpvn@master/filter/abpvn-hosts.txt"
+    "https://cdn.statically.io/gh/abpvn/abpvn/master/filter/abpvn-hosts.txt",
+    "https://raw.githack.com/abpvn/abpvn/master/filter/abpvn-hosts.txt",
+    "https://cdn.jsdelivr.net/gh/bigdargon/hostsVN@master/option/hostsVN-adguard.txt"
 ]
 
 domains = set()
@@ -27,15 +28,12 @@ for url in SOURCES:
                 cleaned = re.sub(r'(\^|\$).*', '', cleaned).strip()
                 if cleaned and '.' in cleaned and not cleaned.startswith('.'):
                     domains.add(cleaned)
-            if len(domains) > 0:
-                break
     except Exception as e:
         print(f"Lỗi: {e}")
 
 with open("blocklist.txt", "w", encoding="utf-8") as f:
-    f.write("! Title: ABPVN Custom Mirror List\n\n")
+    f.write("! Title: ABPVN & VN Blocklist Mirror\n\n")
     for domain in sorted(domains):
         f.write(f"||{domain}^\n")
 
-print(f"Thành công: Đã tải {len(domains)} domains từ ABPVN.")
-
+print(f"Done: {len(domains)} domains")
