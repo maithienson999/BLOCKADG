@@ -1,2 +1,14 @@
-! Title: ABPVN List
+! Title: ABPVN Fixed Mirror
 
+﻿[Adblock Plus 2.0]
+! Title: Bộ lọc của bạn đã hết hạn vui lòng truy cập abpvn.com để cập nhật
+! Expires: 1 days
+! Updated: 28 December 2020
+! License: ABPVN
+! Please report any unblocked ads or problems by email or in our forums
+! Mọi thắc mắc xin gửi về email forum hoặc fanpage! Email: support@abpvn.com
+! Homepage: https://abpvn.com
+! Facebook Fanpage: https://www.facebook.com/abpvn.org
+! Forum: https://voz.vn/t/abpvn-chan-quang-cao-cho-nguoi-viet.25778/
+! Report new issue on github: https://github.com/abpvn/abpvn/issues/new
+! ---------- Generic Blocking Rules ----------
