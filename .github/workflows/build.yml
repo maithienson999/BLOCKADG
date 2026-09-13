@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
@@ -27,3 +29,4 @@ jobs:
           git add blocklist.txt
           git commit -m "Auto update blocklist" || exit 0
           git push
+
