@@ -1,7 +1,7 @@
 import urllib.request
 
 # Link AdGuard DNS filter chuẩn
-URL = "https://github.com/abpvn/abpvn/blob/master/filter/abpvn_adguard.txt"
+URL = "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn_adguard.txt"
 
 try:
     req = urllib.request.Request(URL, headers={'User-Agent': 'Mozilla/5.0'})
