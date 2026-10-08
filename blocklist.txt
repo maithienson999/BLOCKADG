@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20261006164610384
+! Version: 20261008091321606
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | AdGuard
-! Last modified: 06 Oct 2026 16:46:10 UTC+7
-! Diff-Path: patches/20261006164610384.patch#abpvn_adguard
+! Last modified: 08 Oct 2026 09:13:21 UTC+7
+! Diff-Path: patches/20261008091321606.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -43,7 +43,7 @@
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=www.1phim36.com|listnhacai88.com|rakhoizam.cc
+/i.imgur.com/*.gif$domain=www.1phim36.com|listnhacai88.com|rakhoizas.cc
 /lv/esnk/*$script
 /newchill/*gif$image
 /player/jwplayer-*/vast.js$script
@@ -63,7 +63,7 @@
 /taichinhdoanhnghiep.net.vn/files/qc
 /tracking_info.gif$domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn|thanhnien.vn
 /v/*/vast.js$script
-/vast.js$script,domain=boctem.org|xemphim.site|phimdacap.tv|player.cloudbeta.win|holitv.org
+/vast.js$script,domain=boctem.org|xemphim.site|phimdacap.tv|player.cloudbeta.win
 /videojs.ads.$domain=~danet.vn
 /videojs.ima.js$domain=~jut.su|~earthcam.com
 ||*.servimg.com/u/f45/$domain=gocmod.com
@@ -89,7 +89,7 @@
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 ||cdn.giavang.org/images/ads/$image,domain=giavang.org
 ||cdn.lfastcdn.com/2026/04/dzzmi8.gif$image
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizam.cc
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizas.cc
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
 ||cdn.phimmoihd.it.com/uploads/images/hi88-preroll-1609.mp4$media
 ||cdn.phimmoihd.it.com/uploads/images/i9-600x400.jpg$image
@@ -184,11 +184,11 @@
 ||qthang.net/js/blocker$script,~third-party
 ||quaivatdienanh.com/*banner$image
 ||quoracdn.net^$image,domain=www.1phim36.com|phimlongtieng.net
-||rophimiz.llc^*.gif,~third-party
 ||run.vn/widget$script,~third-party
 ||s2.truyentot.com^*.gif$image,domain=hhtq13.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com|hhvietsub.com
 ||server.zmedia.vn/static/$script
 ||sggp.org.vn/*banner
+||smalltanks.co.uk^*.gif,~third-party
 ||smartf.vn/wp-content/themes/hongtq_smartf_theme/img/quang-cao/$image
 ||sohuutritue.net.vn/files/qc/
 ||static.accesstrade.vn/js/v2/floating-ads-icon.min.js$script
@@ -290,7 +290,7 @@
 ||pub.akadigital.vn^
 ||pub.lavamedia.vn^
 ||pub.lavanetwork.net^$third-party
-||q3ei4f.rophim10.shop^
+||q3ei4f.rophim10.store^
 ||qc.coccoc.com^$third-party
 ||qc.violet.vn^
 ||realclick.vn^$third-party
@@ -510,7 +510,6 @@ hoatieu.vn,quantrimang.com###adsposttop
 hoatieu.vn,vndoc.com##div[class^="adbox"]
 hocaz.vn##.banner-estudyme-container
 hoidap247.com##.ads-home-feed
-holitv.org##.catfish-bottom-desktop
 hopphim.online##.items-end.flex-col.flex.z-\[9998\].right-4.fixed
 hopphim.online##.max-\[1023px\]\:pb-\[5rem\].gap-2.flex-col.flex.z-50.right-4.left-4.bottom-4.fixed
 i2pd.website##.active.bg-overlay
@@ -623,20 +622,20 @@ plcdn.xyz,xoilac.livecdnem.com##.odds-button2
 qdnd.vn##.box-banner
 qmanga.art,khotruyen.ac##.gwd-banner-image
 quantrimang.com###adrighttop
-rakhoizam.cc###wap_bottombanner
-rakhoizam.cc##.bookmaker-selector-container
-rakhoizam.cc##.btn-8xbet
-rakhoizam.cc##.btn-odds
-rakhoizam.cc##.footer-banner
-rakhoizam.cc##.sk_balloon
+rakhoizas.cc###wap_bottombanner
+rakhoizas.cc##.bookmaker-selector-container
+rakhoizas.cc##.btn-8xbet
+rakhoizas.cc##.btn-odds
+rakhoizas.cc##.footer-banner
+rakhoizas.cc##.sk_balloon
 reatimes.vn##div[class^="adv-"]
-rophim10.shop##.adserver
-rophim10.shop##.mt-3.topics-line.topics-grid.topics-list
-rophimiz.llc,mamphim.space##.sspp-area
+rophim10.store##.adserver
+rophim10.store##.mt-3.topics-line.topics-grid.topics-list
 sachmoi.net##.boxzilla-bottom-right-container
 sachmoi.net##[href^="https://gotrackecom.info"]
 saostar.vn###mobi-top
 saostar.vn##.pc-bill
+smalltanks.co.uk,mamphim.space##.sspp-area
 soha.vn,gamek.vn##[id^="admzone"]
 soicau247s.org##.linkBanner
 sport5.vn,afamily.vn##.afw-topbanner
@@ -817,7 +816,7 @@ xehay.vn###banner1ab
 xem1080.com##.banner-masthead
 xemphim.site##.sticky_bottom
 xemphim.site,phimhdc.com,phimhdcss.com##.mp-adz
-yanhh3d.kim,hhtm.my###catfish-ads
+yanhh3d.chat,hhtm.my###catfish-ads
 ybox.vn###ybox-H1>div[style]
 ycongnghe.com##.td-container-wrap.td-logo-wrap-full.td-banner-wrap-full
 ycongnghe.com##.td-crumb-container
@@ -902,13 +901,13 @@ www.vn2c.my#@#.advertiser
 /^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,5}\/){0,2}[a-z]{2,}\?(?:[a-z]+=(?:\d+|[a-z]+)&)*?id=[12]\d{6}/$script,third-party
 /assets/js/vast.js$script
 /jwplayer/vast.js$script
-/player/html.php?aid=*&video_id=*&referer=https*xnhau.navy$domain=xnhau.navy
+/player/html.php?aid=*&video_id=*&referer=https*xnhau.foo$domain=xnhau.foo
 /player/vast.js$script
 /wp-content/uploads/*.gif$image,domain=www.hayvn.net|truyennung.net
 @@||cdn.adxcontent.com/vlxx/vl-inplayer-adx.js
 @@||pagead2.googlesyndication.com^$domain=gaingon3d.com|cap3.video|qmh.garden
 docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
-||ads.bizwd.net^$image,domain=myrogianni.com
+||ads.bizwd.net^$image,domain=tacoshacktn.com
 ||agtcmuohbt.in^
 ||blogger.googleusercontent.com^*.gif$image,domain=www.gvnvh18z.com
 ||bullionglidingscuttle.com/lv/esnk/2031811/code.js$domain=lxmanga.space,rewrite=abp-resource:blank-js
@@ -946,7 +945,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||qmhv3.fit/api/ads$xmlhttprequest
 ||qmhv3.fit/uploads/banners/$image,domain=qmhv3.fit
 ||quatvn.diy^*.gif$image
-||quoracdn.net^$image,domain=sexgai2k.net|sexmupxinh.net|haysexhihi.com|fulllivehot.us|haysexvn.shop|viet69hay.beauty
+||quoracdn.net^$image,domain=xxxphim.org|sexmupxinh.net|haysexhihi.com|fulllivehot.us|haysexvn.shop|viet69hayz.lat
 ||rphang.now^*.gif
 ||sayhentai.cx/assets/js/ads.js
 ||sayhentai.cx/storage/images/banner/$image
@@ -967,7 +966,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||xamer.xyz/styles/file/$image
 ||xfast.sbs/media/$image,domain=fullcliphot.org|fulllivehot.us
 ||xfast.sbs^*.gif$image,domain=clipphot.co
-||xnhau.blog^$media,domain=xnhau.navy
+||xnhau.blog^$media,domain=xnhau.foo
 !---------- ABPVN Adult Element Hide ---------------
 18tube.uk##.ads-gated
 @@||lxmanga.space$generichide
@@ -999,15 +998,13 @@ gamer18.net##div[id^="divFLR"]
 gockhuat.net###ad_global_below_navbar
 haysexvn.shop###vl-header-adx
 haysexvn.shop##.castfish-wrappe
-haysexvn.shop,viet69hay.beauty##.popup
+haysexvn.shop,viet69hayz.lat##.popup
 javgiga.wordpress.com##.pum-overlay
 javtiful.com###latest-censored-videos>.row>div.pb-3.col:nth-of-type(1)
 javtopxx2.com###fbox-background
 javtopxx2.com##.logo-player
 javtopxx2.com##.sticky_bottom
 laalmirchitakeaway.co.uk##.banner-preload
-myrogianni.com###popup-ad-box
-myrogianni.com##.banner-ad
 ngaytho.me##.body_wrapper1
 phe69.men###ad-banner
 phe69.men###phe-overlay-root
@@ -1039,13 +1036,14 @@ rphang.now##.samVideoOverlay
 rphang.now##div.samCodeUnit[data-position="footer_fixed"]
 rphang.now##div.samItem:has(video.topmobileads)
 sayhentai.cx#@#.c-ads
-sexgai2k.net,sexmupxinh.net,haysexhihi.com##.xx-ads
 sexmupxinh.net##.catfix
 sexmupxinh.net,haysexhihi.com,laalmirchitakeaway.co.uk##.catfish-top
 sexphimhayw.pro,sexhayvl.co.uk##.quangcaomobile
 sextop.asia##div[style^="position:fixed;inset:0px;z-index:100000;"]
 sextop.asia,dynadot.rsocdomains.com###video_player ~ div[id]
 streamobs.net###AgeModal
+tacoshacktn.com###popup-ad-box
+tacoshacktn.com##.banner-ad
 thefaplive.com###backgroundPopupp
 thefaplive.com###ds_top
 thefaplive.com###popupContact
@@ -1062,7 +1060,7 @@ vailonxx.me##.vailo-sticky
 vailonxx.me##.vailo-under-navbar
 vailonxx.me##.vailo-under-navbar-mobile
 vi.xnxx.studio,trangsexdam.net,vlxx.rip###f186fb23a33995d91ce3c2212189178c8
-viet69hay.beauty###castfish
+viet69hayz.lat###castfish
 viet69vn.at,viet69.be##.footer-fixed-br-container
 vlxx.rip,trangsexdam.net##.hd-tube-desktop
 vlxx.rip,trangsexdam.net##.hd-tube-mobile
@@ -1085,10 +1083,11 @@ xiuren.org###bannerIn
 xiuren.org###exoIMFrame
 xiuren.org###nativeAds_1505931906161
 xiuren.org##div[id^="exo_slider_"]
-xnhau.navy##.fp-ui>div[style]
-xnhau.navy##.sponsor
-xnhau.navy##.spot
+xnhau.foo##.fp-ui>div[style]
+xnhau.foo##.sponsor
+xnhau.foo##.spot
 xnxx.com###content-ad-top-zone
+xxxphim.org,sexmupxinh.net,haysexhihi.com##.xx-ads
 z1.chinav.sex###cashfit-banner-host
 z1.chinav.sex##.adbox
 z1.chinav.sex##.banner-container
@@ -1109,11 +1108,11 @@ cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn,thanhnien.vn#%
 cap3.video,qmh.garden#%#//scriptlet("abort-on-property-read", "sessionStorage")
 cdn.codexa.fun#%#//scriptlet("abort-current-inline-script", "$", "arrDirectLink")
 chotlo3s.com#$##header {margin-top: 0!important}
-cliphubs.com,viet69hay.beauty,clipphot.co#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "pop")
+cliphubs.com,viet69hayz.lat,clipphot.co#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "pop")
 cmangax18.com#%#//scriptlet("prevent-setTimeout", "ads_num")
 cunghocvui.com,checkscam.vn#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "open")
 dualeotruyenpet.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "popunder")
-dualeotruyenpet.com,sexgai2k.net,cliphot69.space,doctruyen3qhub.fit,qmanga.art,hentaivkl.pro,buomtv.diy,truyenvn.sbs,javtiful.com,quatvn.diy,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.pet,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.space,phimlongtieng.net,www.sieutamphim.pro,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen19.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
+dualeotruyenpet.com,xxxphim.org,cliphot69.space,doctruyen3qhub.fit,qmanga.art,hentaivkl.pro,buomtv.diy,truyenvn.sbs,javtiful.com,quatvn.diy,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.pet,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.space,phimlongtieng.net,www.sieutamphim.pro,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen19.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
 freeplayervideo.com,abysscdn.com,player-cdn.com,playhydrax.com#%#//scriptlet("abort-current-inline-script", "document.getElementById", "openPop")
 freeplayervideo.com,www.sieutamphim.pro,player-cdn.com,hopphim.online,streamc.xyz,qmhv3.fit,cap3.video,qmh.garden#%#//scriptlet("set-constant", "open", "noopFunc")
 giavang.net#%#//scriptlet("prevent-fetch", "method:HEAD")
@@ -1170,18 +1169,18 @@ quykhu.com##.shadow-sm.space-y-2.text-center.text-blue-900.rounded-2xl.border-bl
 quykhu.com#$##content {max-height:none !important;opacity:1 !important}
 quykhu.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "atob")
 rophim.moe#%#//scriptlet("abort-current-inline-script", "addEvent", "popu")
-rophimiz.llc,motphimc.pw,phimmoic.ws#%#//scriptlet("prevent-addEventListener", "click", "ads")
 rphang.now,misskon.com#%#//scriptlet("abort-current-inline-script", "document.querySelectorAll", "popMagic")
 saigon24.net#%#//scriptlet("abort-current-inline-script", "document.getElementById", "myModal")
 sex.javnong.cc#%#//scriptlet("abort-on-property-read", "Math.round")
 sexmupxinh.net#%#//scriptlet("abort-on-property-read", "Cookies")
+smalltanks.co.uk,motphimc.pw,phimmoic.ws#%#//scriptlet("prevent-addEventListener", "click", "ads")
 subnhanh.plus#%#//scriptlet("abort-current-inline-script", "$", "pop")
 tram3d.com#%#//scriptlet("abort-current-inline-script", "document.createElement", ";break;case")
 tram3d.mom#%#//scriptlet("abort-current-inline-script", "setTimeout", "appendChild")
 tram3d.skin,animevietsub.nl#%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
 truyen247.pro#%#//scriptlet("abort-current-inline-script", "eval")
 truyenfull.live#%#//scriptlet("set-constant", "ads_show", "0")
-truyensextv.com,yanhh3d.kim,z1.chinav.sex#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "opup")
+truyensextv.com,yanhh3d.chat,z1.chinav.sex#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "opup")
 truyensieuhay.com,xemphim.site,quangcaoyenbai.com,phimchill.life,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,haysexhihi.com,anime47.best,phimhdc.com,honghotduongpho.vn,comong.info,qmhsex.fun#%#//scriptlet("abort-on-property-read", "document.cookie")
 vailonxx.me#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
 vinaurl.net#%#//scriptlet("abort-on-property-read", "oneClick")
@@ -1196,8 +1195,8 @@ www.sieutamphim.pro#%#//scriptlet("abort-on-property-write", "_$_d52e")
 www.toptruyenzone12.com#%#//scriptlet("abort-current-inline-script", "setTimeout", "open")
 xem20.net#%#//scriptlet("json-prune", "props.children.[].props.tvc")
 xemphim.site#%#//scriptlet("set-constant", "maxAds", "0")
-xnhau.navy#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "lastPopunderTime")
-xnhau.navy#%#//scriptlet("prevent-addEventListener", "click", "/acquirecardedsullen|POPUNDER_INTERVAL|lastPopunderTime/")
+xnhau.foo#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "lastPopunderTime")
+xnhau.foo#%#//scriptlet("prevent-addEventListener", "click", "/acquirecardedsullen|POPUNDER_INTERVAL|lastPopunderTime/")
 xnxx-sex-videos.com#%#//scriptlet("abort-current-inline-script", "setTimeout", "window.location")
 xnxx-sex-videos.com#%#//scriptlet("remove-attr", "target|onclick", "a[href^='/video/']")
 znews.vn#%#//scriptlet("abort-on-property-read", "adtimaConfig")
