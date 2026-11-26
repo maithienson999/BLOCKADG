@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20261125100925208
+! Version: 20261126110137076
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | AdGuard
-! Last modified: 25 Nov 2026 10:09:25 UTC+7
-! Diff-Path: patches/20261125100925208.patch#abpvn_adguard
+! Last modified: 26 Nov 2026 11:01:37 UTC+7
+! Diff-Path: patches/20261126110137076.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -214,7 +214,7 @@
 ||tudomuaban.com/public/upload/ad/
 ||tuyensinh247.com/$image,third-party
 ||tuyensinhso.vn/images/banners/*.gif$image,~third-party
-||tzhay.xyz^*.gif$image,domain=phimchill.life
+||tvphim.help^*.gif$image,domain=phimchill.life
 ||uniad.$third-party
 ||universalwindscreens.co.uk/images/banners/$image
 ||vesotantai.com/upload/photo/$image
@@ -286,7 +286,6 @@
 ||media.yomedia.vn^
 ||meta.vn^$third-party
 ||ob.joyrodetoment.com^
-||onnetwork.tv^$third-party
 ||oursty.com^
 ||player.gliacloud.com^
 ||pub.akadigital.vn^
@@ -926,7 +925,7 @@ www.vnjpclub.com#@#.adunit
 @@||cdn.adxcontent.com/vlxx/vl-inplayer-adx.js
 @@||pagead2.googlesyndication.com^$domain=gaingon3d.com|cap3.video|qmh.garden
 docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
-||ads.bizwd.net^$image,domain=domusangularia.com
+||ads.bizwd.net^$image,domain=funkolandia.com
 ||agtcmuohbt.in^
 ||blogger.googleusercontent.com^*.gif$image,domain=www.gvnvh18z.com
 ||bullionglidingscuttle.com/lv/esnk/2031811/code.js$domain=lxmanga.top,rewrite=abp-resource:blank-js
@@ -1007,11 +1006,11 @@ cliphot69.study###custom_html-42
 cliphotvn69.com,dynadot.rsocdomains.com,cliphot69.study,www.gvnvh18z.com,phimsexhayvne.com,sayhentai.cx,xamvn.team,sexviet69.cc##.float-ck-center-lt
 damconuong.help##.catfish-ad
 damconuong.help##a[rel="nofollow"]
-domusangularia.com###popup-ad-box
-domusangularia.com##.banner-ad
 fullcliphot.org##div#recent-content:nth-of-type(1)
 fullcliphot.org,fulllivehot.us,clipphot.co##.cashfish
 fullcliphot.org,fulllivehot.us,clipphot.co##.mini-player
+funkolandia.com###popup-ad-box
+funkolandia.com##.banner-ad
 gaingon3d.com###iklan-atas-wrapper
 gamer18.net##.fixed-banner-bottom
 gamer18.net##div[id^="divFLR"]
@@ -1036,7 +1035,8 @@ phim18hd.site##.cash-fish-pc
 phim18hd.site##.preload-pc
 phim18hd.site##.top-mobile-banner
 phim18hd.site##.under-player-pc-banner
-phimsexsuong3x.net,gaisexhihi.pro,javhdz.sh,laalmirchitakeaway.co.uk##.catfish-bottom
+phimsex9x.com,sexmupxinh.net,haysexhihi.me##.xx-ads
+phimsexsuong3x.net,haysexhihi.me,javhdz.sh,laalmirchitakeaway.co.uk##.catfish-bottom
 play.zpic.org##.btm_bar
 play.zpic.org##div.ad-container
 qmhv3.one##.global-sticky-ads
@@ -1059,7 +1059,7 @@ rphang.fund##div.samCodeUnit[data-position="footer_fixed"]
 rphang.fund##div.samItem:has(video.topmobileads)
 sayhentai.cx#@#.c-ads
 sexmupxinh.net##.catfix
-sexmupxinh.net,gaisexhihi.pro,laalmirchitakeaway.co.uk##.catfish-top
+sexmupxinh.net,haysexhihi.me,laalmirchitakeaway.co.uk##.catfish-top
 sexphimhayw.pro,xphimsexvl.com##.quangcaomobile
 sextop.asia##div[style^="position:fixed;inset:0px;z-index:100000;"]
 sextop.asia,dynadot.rsocdomains.com###video_player ~ div[id]
@@ -1101,7 +1101,6 @@ x.phimsexvn1.co.uk##.ads-header
 xamvn.team##.float-contact
 xamvn.team##.float-contact2
 xamvn.team##.js-notices
-xemphim3x.pro,sexmupxinh.net,gaisexhihi.pro##.xx-ads
 xfast.sbs###overlay
 xiuren.org###bannerIn
 xiuren.org###exoIMFrame
@@ -1138,7 +1137,7 @@ giovang.guru#%#//scriptlet("json-prune", "0.default_ads_video")
 gocmod.com#%#//scriptlet("abort-current-inline-script", "jQuery", "popup")
 haysexvn.shop#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "adx")
 hentaibox.top#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "popunder")
-hentaibox.top,xemphim3x.pro,cliphot69.study,doctruyen3qhub.club,qmanga.art,hentaivkl.pro,buomtv.biz,truyenvn.sbs,javtiful.com,quatvn.stream,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.help,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.top,ww6.motphimy.com,www.sieutamphim.cloud,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen22.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
+hentaibox.top,phimsex9x.com,cliphot69.study,doctruyen3qhub.club,qmanga.art,hentaivkl.pro,buomtv.biz,truyenvn.sbs,javtiful.com,quatvn.stream,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.help,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.top,ww6.motphimy.com,www.sieutamphim.cloud,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen22.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
 hh2d.top#%#//scriptlet("abort-current-inline-script", "$", "adblock")
 hhtq.sh###overlay
 hhtq.sh,phimchautinhtri.net#$#html {overflow: auto!important;}
@@ -1195,7 +1194,7 @@ tram3d.skin,animevietsub.zone#%#//scriptlet("abort-current-inline-script", "eval
 truyen247.pro#%#//scriptlet("abort-current-inline-script", "eval")
 truyenfull.live#%#//scriptlet("set-constant", "ads_show", "0")
 truyensextv.com,yanhh3d.now,x.chinav.sex#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "opup")
-truyensieuhay.com,animesub.site,quangcaoyenbai.com,phimchill.life,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,gaisexhihi.pro,anime47.best,phimhdc.com,honghotduongpho.vn,comong.info,qmhsex.guru#%#//scriptlet("abort-on-property-read", "document.cookie")
+truyensieuhay.com,animesub.site,quangcaoyenbai.com,phimchill.life,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,haysexhihi.me,anime47.best,phimhdc.com,honghotduongpho.vn,comong.info,qmhsex.guru#%#//scriptlet("abort-on-property-read", "document.cookie")
 vailonxx.me#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
 vinaurl.net#%#//scriptlet("abort-on-property-read", "oneClick")
 vndoc.com#%#//scriptlet("set-constant", "seconds", "0")
